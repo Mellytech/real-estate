@@ -1,0 +1,110 @@
+[
+  {
+    "id": 1,
+    "title": "Modern Loft in Downtown",
+    "description": "Spacious 2‑bedroom loft with city views, open floor plan, and rooftop access.",
+    "location": "Downtown, City Center",
+    "coords": [40.7128, -74.0060],
+    "price": "$350,000",
+    "image": "https://images.unsplash.com/photo-1554995207-c18c203602cb?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 2,
+    "title": "Cozy Suburban House",
+    "description": "3‑bedroom family home with garden, garage, and nearby schools.",
+    "location": "Oak Ridge, Suburbs",
+    "coords": [40.7306, -73.9352],
+    "price": "$420,000",
+    "image": "https://images.unsplash.com/photo-1568605114967-8130f3a36994?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 3,
+    "title": "Luxury Penthouse",
+    "description": "5‑bedroom penthouse with private pool, concierge, and panoramic skyline views.",
+    "location": "Skyline Heights, Uptown",
+    "coords": [40.7580, -73.9855],
+    "price": "$1,250,000",
+    "image": "https://images.unsplash.com/photo-1512918728675-ed5a9ecdebfd?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 4,
+    "title": "Beachside Villa",
+    "description": "4‑bedroom villa with private beach access, infinity pool, and stunning ocean views.",
+    "location": "Malibu, Coastal",
+    "coords": [34.0259, -118.7798],
+    "price": "$2,300,000",
+    "image": "https://images.unsplash.com/photo-1499793983690-e29da59ef1c2?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 5,
+    "title": "Mountain Cabin Retreat",
+    "description": "Cozy cabin nestled in the mountains, perfect for weekend getaways and nature lovers.",
+    "location": "Aspen, Highlands",
+    "coords": [39.1911, -106.8175],
+    "price": "$680,000",
+    "image": "https://images.unsplash.com/photo-1518780664697-55e3ad937233?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 6,
+    "title": "Urban Studio Apartment",
+    "description": "Compact studio in the heart of the city, close to transit, shops, and nightlife.",
+    "location": "Brooklyn, Metro",
+    "coords": [40.6782, -73.9442],
+    "price": "$210,000",
+    "image": "https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 7,
+    "title": "Mediterranean Mansion",
+    "description": "Exquisite 6-bedroom estate with Spanish architecture, luxury marble floors, and lush palm gardens.",
+    "location": "Miami, Beachfront",
+    "coords": [25.7617, -80.1918],
+    "price": "$5,400,000",
+    "image": "https://images.unsplash.com/photo-1613490493576-7fde63acd811?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 8,
+    "title": "Historic Victorian Home",
+    "description": "Beautifully restored Victorian era home featuring original stained glass and elegant woodworking.",
+    "location": "San Francisco, Heights",
+    "coords": [37.7749, -122.4194],
+    "price": "$2,950,000",
+    "image": "https://images.unsplash.com/photo-1605276374104-dee2a0ed3cd6?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 9,
+    "title": "Glass Lakehouse",
+    "description": "Contemporary glass house hanging over the water with breathtaking sunset views and private dock.",
+    "location": "Lake Tahoe, Shoreline",
+    "coords": [39.0968, -120.0324],
+    "price": "$3,200,000",
+    "image": "https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 10,
+    "title": "Desert Oasis",
+    "description": "Modern desert home with panoramic valley views, heated saltwater pool, and outdoor fire pit.",
+    "location": "Palm Springs, Desert",
+    "coords": [33.8303, -116.5453],
+    "price": "$1,150,000",
+    "image": "https://images.unsplash.com/photo-1502672260266-1c1ef2d93688?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 11,
+    "title": "Minimalist Condo",
+    "description": "Sleek and quiet 1-bedroom condo with floor-to-ceiling windows and high-end smart home features.",
+    "location": "Los Angeles, Arts District",
+    "coords": [34.0407, -118.2468],
+    "price": "$890,000",
+    "image": "https://images.unsplash.com/photo-1493809842364-78817add7ffb?auto=format&fit=crop&w=800&q=80"
+  },
+  {
+    "id": 12,
+    "title": "Charming Country Farmhouse",
+    "description": "Picturesque farmhouse on 5 acres with a large wrap-around porch and authentic red barn.",
+    "location": "Vermont, Green Mountains",
+    "coords": [44.5588, -72.5778],
+    "price": "$780,000",
+    "image": "https://images.unsplash.com/photo-1500382017468-9049fed747ef?auto=format&fit=crop&w=800&q=80"
+  }
+]

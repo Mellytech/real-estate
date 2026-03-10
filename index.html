@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Melly's Estate – Luxury Homes</title>
+    <meta name="description" content="Explore premium real estate listings with a sleek, modern interface. Search, filter, and view property details effortlessly." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+    <!-- Leaflet CNS for Maps -->
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css" integrity="sha256-p4NxAoJBhIIN+hmNHrzRCf9tD/miZyoHS5obTRR9BMY=" crossorigin="" />
+    <script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js" integrity="sha256-20nQCchB9co0qIjJZRGuk2/Z9VM+kNiyxNV1lvTlZBo=" crossorigin=""></script>
+</head>
+<body>
+    <!-- Navigation Bar -->
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Melly's Estate</h1>
+            <p>Find your next masterpiece among our curated luxury properties.</p>
+            <div class="search-bar">
+                <input type="text" id="searchInput" placeholder="Search by city, neighbourhood, or ZIP..." />
+                <button id="searchBtn">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Main Content: Listings and Map -->
+    <main class="main-content">
+        <div class="listings-wrapper">
+            <section class="listings" id="listingsContainer">
+                <!-- Property cards will be injected by script.js -->
+            </section>
+        </div>
+
+        <section class="map-container">
+            <div id="map"></div>
+        </section>
+    </main>
+
+
+    <!-- Footer -->
+    <!-- Modal for Image Viewing -->
+    <div id="imageModal" class="modal">
+        <span class="close">&times;</span>
+        <div class="modal-content-container">
+            <img class="modal-content" id="modalImg">
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2026 Melly's Estate. All rights reserved. | developed by mellytech</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>

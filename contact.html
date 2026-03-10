@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Contact Us – Melly's Estate</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+
+<body class="contact-page">
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <main class="contact-v2">
+        <div class="contact-hero-split">
+            <!-- Left Side: Content & Branding -->
+            <div class="contact-side-info">
+                <div class="content-box">
+                    <span class="badge">Direct Access</span>
+                    <h1>Connect With Our <br><span class="highlight">Luxury Experts</span></h1>
+                    <p>Whether you're looking for your next investment or your forever home, our specialized team is
+                        ready to guide you through the process with precision and care.</p>
+
+                    <div class="contact-stats">
+                        <div class="stat">
+                            <h3>24/7</h3>
+                            <p>Premium Support</p>
+                        </div>
+                        <div class="stat">
+                            <h3>15+</h3>
+                            <p>Global Offices</p>
+                        </div>
+                    </div>
+
+                    <div class="social-links">
+                        <a href="#" class="social-btn">Instagram</a>
+                        <a href="#" class="social-btn">LinkedIn</a>
+                        <a href="#" class="social-btn">Twitter</a>
+                    </div>
+                </div>
+            </div>
+
+            <!-- Right Side: The Form (Floating Glass) -->
+            <div class="contact-side-form">
+                <div class="glass-form-container">
+                    <div class="form-header">
+                        <h2>Inquiry Form</h2>
+                        <p>We typically respond within 2 hours.</p>
+                    </div>
+                    <form id="contactForm">
+                        <div class="input-row">
+                            <div class="form-group floating">
+                                <input type="text" id="name" required>
+                                <label for="name">Full Name</label>
+                            </div>
+                            <div class="form-group floating">
+                                <input type="email" id="email" required>
+                                <label for="email">Email</label>
+                            </div>
+                        </div>
+                        <div class="form-group floating">
+                            <select id="subject">
+                                <option value="" disabled selected>Nature of Interest</option>
+                                <option value="buy">Acquisition (Buying)</option>
+                                <option value="sell">Divestment (Selling)</option>
+                                <option value="view">Private Viewing</option>
+                                <option value="other">General Inquiry</option>
+                            </select>
+                        </div>
+                        <div class="form-group floating">
+                            <textarea id="message" rows="4" required></textarea>
+                            <label for="message">Your Message</label>
+                        </div>
+                        <button type="submit" class="premium-submit">
+                            <span>Send Secure Message</span>
+                            <div class="arrow">→</div>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </div>
+
+        <!-- Quick Contact Tiles -->
+        <section class="info-tiles">
+            <div class="tile">
+                <div class="tile-icon">📍</div>
+                <h3>Visit HQ</h3>
+                <p>90210 Beverly Hills,<br>Los Angeles, CA</p>
+            </div>
+            <div class="tile">
+                <div class="tile-icon">📞</div>
+                <h3>Speak Directly</h3>
+                <p>+233 531688968<br>Available Mon-Sat</p>
+            </div>
+            <div class="tile">
+                <div class="tile-icon">✉️</div>
+                <h3>Email Reach</h3>
+                <p>baidoob7525@gmail.com<br>Verified responses only</p>
+            </div>
+        </section>
+    </main>
+
+    <footer>
+        <p>&copy; 2026 Melly's Estate. All rights reserved. | developed by mellytech</p>
+    </footer>
+
+    <script src="script.js"></script>
+    <script>
+        document.getElementById('contactForm')?.addEventListener('submit', (e) => {
+            e.preventDefault();
+            const btn = e.target.querySelector('button');
+            btn.innerHTML = 'Sending...';
+            setTimeout(() => {
+                alert('Success! Your inquiry has been prioritized. A luxury expert will reach out shortly.');
+                btn.innerHTML = '<span>Send Secure Message</span><div class="arrow">→</div>';
+                e.target.reset();
+            }, 1000);
+        });
+    </script>
+</body>
+
+</html>

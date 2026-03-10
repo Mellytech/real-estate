@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Property Gallery – Melly's Estate</title>
+    <meta name="description" content="Browse our premium property gallery with stunning images." />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+    <nav class="navbar">
+        <ul>
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about.html">About</a></li>
+            <li><a href="gallery.html">Gallery</a></li>
+            <li><a href="contact.html">Contact</a></li>
+        </ul>
+    </nav>
+
+    <section class="hero">
+        <div class="hero-overlay">
+            <h1>Property Gallery</h1>
+            <p>Explore our curated collection of premium listings.</p>
+        </div>
+    </section>
+
+    <section class="listings" id="galleryContainer">
+        <!-- Cards will be injected by script.js -->
+    </section>
+
+    <!-- Modal for Image Viewing -->
+  <div id="imageModal" class="modal">
+    <span class="close">&times;</span>
+    <div class="modal-content-container">
+      <img class="modal-content" id="modalImg">
+    </div>
+  </div>
+
+  <footer>
+        <p>&copy; 2026 Melly's Estate. All rights reserved. | developed by mellytech</p>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html>
