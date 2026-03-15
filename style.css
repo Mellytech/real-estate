@@ -798,28 +798,103 @@ footer {
 }
 
 @media (max-width: 1024px) {
-  .about-hero { flex-direction: column; text-align: center; padding: 6rem 2rem; }
-  .values-list, .team-grid { grid-template-columns: 1fr; }
-  .achievements { grid-template-columns: 1fr 1fr; }
+  .about-hero { flex-direction: column; text-align: center; padding: 6rem 5%; gap: 3rem; }
+  .about-hero-image img { transform: rotate(0); border-radius: 2rem; }
+  .values-list, .team-grid { grid-template-columns: 1fr; gap: 2rem; }
+  .achievements { grid-template-columns: 1fr 1fr; padding: 4rem 5%; }
   
+  /* Home Page Split View */
+  .main-content {
+    flex-direction: column;
+    height: auto;
+  }
+  .map-container {
+    height: 400px;
+    width: 100%;
+    position: relative;
+    top: 0;
+    order: -1;
+    flex: none;
+    border-bottom: 2px solid var(--color-primary);
+  }
+  .listings-wrapper {
+    flex: none;
+    padding: 1.5rem;
+  }
+
+  /* Contact Page Split View */
   .contact-hero-split {
     flex-direction: column;
   }
-  .contact-side-info {
-    padding: 6rem 2rem;
+  .contact-side-info, .contact-side-form {
+    flex: none;
+    width: 100%;
+    padding: 4rem 5%;
+  }
+  .contact-v2 {
+    margin-top: 0;
+    padding-top: 2rem;
   }
   .info-tiles {
     grid-template-columns: 1fr;
-    margin-top: 2rem;
+    margin: 2rem auto;
   }
   .input-row {
     grid-template-columns: 1fr;
   }
 }
 
-/* ==== Responsive ==== */
-@media (max-width: 600px) {
-  .hero-overlay { padding: 2rem 1rem; }
-  .search-bar { flex-direction: column; }
-  .navbar ul { gap: 1rem; }
+/* Tablet and Smaller */
+@media (max-width: 768px) {
+  .hero-overlay { padding: 2.5rem 1.5rem; max-width: 90%; }
+  .hero-overlay h1 { font-size: 2.5rem; }
+  .hero-overlay p { font-size: 1.1rem; }
+  .search-bar { flex-direction: column; width: 100%; }
+  .search-bar input, .search-bar button { width: 100%; }
+
+  .about-hero-content h1 { font-size: 3rem; }
+  .about-hero-content p { font-size: 1.1rem; }
+  
+  .achievement-item h2 { font-size: 2.8rem; }
+  .vision-text h2, .section-title h2 { font-size: 2.5rem; }
+  .vision-section, .team-section, .about-cta { padding: 5rem 5%; }
+  
+  .cta-box { padding: 4rem 2rem; border-radius: 2rem; }
+  .cta-box h2 { font-size: 2.5rem; }
+  
+  .navbar { padding: 1rem; }
+  .navbar ul { gap: 1.5rem; }
+
+  .contact-stats { gap: 1.5rem; justify-content: center; }
+  .contact-side-info { text-align: center; }
+  .social-links { justify-content: center; }
+  .glass-form-container { padding: 2.5rem 1.5rem; border-radius: 1.5rem; }
 }
+
+/* Mobile Devices */
+@media (max-width: 480px) {
+  .about-hero-content h1 { font-size: 2.2rem; }
+  .achievements { grid-template-columns: 1fr; gap: 3rem; }
+  .achievement-item h2 { font-size: 2.5rem; }
+  
+  .navbar ul { gap: 1rem; }
+  .navbar a { font-size: 0.9rem; }
+  
+  .value-card { padding: 2rem 1.5rem; }
+  .cta-box h2 { font-size: 2rem; }
+  .cta-box p { font-size: 1.1rem; }
+  .primary-btn { 
+    display: block; 
+    padding: 1.25rem 2rem; 
+    width: 100%; 
+    max-width: 300px;
+    margin: 0 auto;
+    text-align: center; 
+  }
+  
+  .modal-content-container { padding: 10px; }
+  .close { top: 1rem; right: 1rem; font-size: 2.5rem; }
+
+  .hero { min-height: 60vh; }
+}
+
